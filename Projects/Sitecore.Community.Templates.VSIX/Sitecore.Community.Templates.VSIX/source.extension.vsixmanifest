@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="6bce207a-288f-4169-a247-84b85155d5e5" Version="1.0" Language="en-US" Publisher="Varun and Brijesh" />
+    <DisplayName>Sitecore Community Project Templates</DisplayName>
+    <Description xml:space="preserve">Sitecore Project Templates created for Sitecore Community to get started quickly and easily for Sitecore Projects creation.</Description>
+    <License>Community-Templates-License.txt</License>
+    <GettingStartedGuide>Readme.txt</GettingStartedGuide>
+    <Icon>icon-32-community.ico</Icon>
+    <PreviewImage>preview-200-community.png</PreviewImage>
+    <Tags>Sitecore</Tags>
+  </Metadata>
+  <Installation AllUsers="true">
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Pro" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Premium" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\$safeprojectname$.Extensions.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\$safeprojectname$.IOC.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\$safeprojectname$.Services.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\$safeprojectname$.Models.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\SitecoreMVCStarterKit.zip" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\SitecoreWebformsStarterKit.zip" />
+  </Assets>
+</PackageManifest>

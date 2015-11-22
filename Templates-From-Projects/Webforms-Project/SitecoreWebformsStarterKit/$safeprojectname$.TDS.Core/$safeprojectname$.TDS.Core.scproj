@@ -1,0 +1,65 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>10f89217-f65a-4f30-96f3-a3acc444186d</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\Sitecore.Webforms.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{9d73dde0-c6c1-46db-81de-582671b10f02}|Sitecore.Webforms.Web\Sitecore.Webforms.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Sitecore.Webforms.Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Sitecore.Webforms.TDS.Core</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <Name>Sitecore.Webforms.TDS.Core</Name>
+    <RootNamespace>Sitecore.Webforms.TDS.Core</RootNamespace>
+    <EnableCodeGeneration>false</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>core</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>True</DisableFileDeployment>
+    <SitecoreAccessGuid>4ab612ee-2a21-4bf2-841f-5bc5c6f93256</SitecoreAccessGuid>
+    <SitecoreWebUrl>http://sccommunitytemplates/</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\Varun\Instances\SCCommunityTemplates\Website</SitecoreDeployFolder>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.Webforms.Web\Sitecore.Webforms.Web.csproj">
+      <Project>{9d73dde0-c6c1-46db-81de-582671b10f02}</Project>
+      <Name>Sitecore.Webforms.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\content.item">
+      <ChildItemSynchronization>NoChildSynchronization</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\content\Applications.item">
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+</Project>

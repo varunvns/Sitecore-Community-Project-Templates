@@ -1,0 +1,44 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Sitecore Webforms Web</Name>
+    <Description>Sitecore Webforms Project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Sitecore.Web</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.Web.csproj" File="$safeprojectname$.Web.csproj" ReplaceParameters="true">
+      <Folder Name="App_Config" TargetFolderName="App_Config">
+        <Folder Name="Include" TargetFolderName="Include">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Glass.Mapper.Sc.CastleWindsor.config">Glass.Mapper.Sc.CastleWindsor.config</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="Glass.Mapper.Sc.CodeFirst.config.exclude">Glass.Mapper.Sc.CodeFirst.config.exclude</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="App_Readme" TargetFolderName="App_Readme">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Elmah.txt">Elmah.txt</ProjectItem>
+      </Folder>
+      <Folder Name="App_Start" TargetFolderName="App_Start">
+        <ProjectItem ReplaceParameters="true" TargetFileName="GlassMapperSc.cs">GlassMapperSc.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="GlassMapperScCustom.cs">GlassMapperScCustom.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <Folder Name="SlowCheetah" TargetFolderName="SlowCheetah">
+          <ProjectItem ReplaceParameters="false" TargetFileName="SlowCheetah.Transforms.targets">SlowCheetah.Transforms.targets</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Scripts" TargetFolderName="Scripts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="modernizr-2.8.3.js">modernizr-2.8.3.js</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

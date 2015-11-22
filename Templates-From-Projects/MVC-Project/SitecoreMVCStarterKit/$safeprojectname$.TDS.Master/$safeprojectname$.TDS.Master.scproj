@@ -1,0 +1,64 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ccbbdfe1-f89d-4710-a1f4-944c4676058b</ProjectGuid>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <SourceWebPhysicalPath>..\Sitecore80.MVC.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{0e32f598-c351-4826-baa1-1ca48b74983f}|Sitecore80.MVC.Web\Sitecore.MVC.Web.csproj</SourceWebProject>
+    <SourceWebVirtualPath>/Sitecore.MVC.Web.csproj</SourceWebVirtualPath>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <EnableUpdateable>true</EnableUpdateable>
+    <UseMerge>true</UseMerge>
+    <SingleAssemblyName>Sitecore80.MVC.TDS.Master</SingleAssemblyName>
+    <UseWebConfigReplacement>false</UseWebConfigReplacement>
+    <DeleteAppCodeCompiledFiles>true</DeleteAppCodeCompiledFiles>
+    <LegacyFileReplacement>false</LegacyFileReplacement>
+    <AssemblyName>Sitecore80.MVC.TDS.Master</AssemblyName>
+    <Name>Sitecore.MVC.TDS.Master</Name>
+    <RootNamespace>Sitecore80.MVC.TDS.Master</RootNamespace>
+    <EnableCodeGeneration>False</EnableCodeGeneration>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
+    <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
+    <CodeGenTargetProject>Sitecore.Models</CodeGenTargetProject>
+    <CodeGenFile>TDSClasses</CodeGenFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreWebUrl>http://sccommunitytemplates/</SitecoreWebUrl>
+    <SitecoreDeployFolder>C:\Varun\Instances\SCCommunityTemplates\Website</SitecoreDeployFolder>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Sitecore.TDS.Master_Debug.xml</ValidationSettingsFilePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttributes Include="AssemblyFileVersion">
+      <Value>$(AssemblyFileVersion)</Value>
+    </AssemblyAttributes>
+    <AssemblyAttributes Include="AssemblyVersion">
+      <Value>$(AssemblyVersion)</Value>
+    </AssemblyAttributes>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore80.MVC.Web\Sitecore.MVC.Web.csproj">
+      <Project>{0e32f598-c351-4826-baa1-1ca48b74983f}</Project>
+      <Name>Sitecore.MVC.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SitecoreItem Include="sitecore\content.item" />
+    <SitecoreItem Include="sitecore\layout.item" />
+    <SitecoreItem Include="sitecore\templates.item" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" />
+</Project>

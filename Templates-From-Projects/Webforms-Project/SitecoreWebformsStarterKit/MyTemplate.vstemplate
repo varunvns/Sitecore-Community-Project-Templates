@@ -1,0 +1,45 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="ProjectGroup">
+  <TemplateData>
+    <Name>Sitecore WF Starter Kit</Name>
+    <Description>Template project containing Sitecore Webforms projects</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>SitecoreWFStarterKit</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+	<PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>   
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Web">
+        $safeprojectname$.Web\SitecoreWeb.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Extensions">
+        $safeprojectname$.Extensions\SitecoreExtensions.vstemplate
+      </ProjectTemplateLink>
+	  <ProjectTemplateLink ProjectName="$safeprojectname$.Services">
+        $safeprojectname$.Services\SitecoreServices.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.IOC">
+        $safeprojectname$.IOC\SitecoreIOC.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Models">
+        $safeprojectname$.Models\SitecoreModels.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.TDS.Core">
+        $safeprojectname$.TDS.Core\SitecoreTDSCore.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.TDS.Master">
+        $safeprojectname$.TDS.Master\SitecoreTDSMaster.vstemplate
+      </ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Web.UnitTest">
+        $safeprojectname$.UnitTests\SitecoreUnitTest.vstemplate
+      </ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

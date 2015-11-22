@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.Web", "Sitecore80.MVC.Web\Sitecore.MVC.Web.csproj", "{0E32F598-C351-4826-BAA1-1CA48B74983F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.Models", "Sitecore80.MVC.Models\Sitecore.MVC.Models.csproj", "{B5C7C50C-AF51-4C05-9E12-C379FD71B482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.IOC", "Sitecore80.MVC.IOC\Sitecore.MVC.IOC.csproj", "{861B794B-0535-4655-A697-12AB3E8EC651}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.MVC.TDS.Core", "Sitecore80.MVC.TDS.Core\Sitecore.MVC.TDS.Core.scproj", "{32A79B50-AA23-44B4-98E3-5BC589978982}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.MVC.TDS.Master", "Sitecore80.MVC.TDS.Master\Sitecore.MVC.TDS.Master.scproj", "{CCBBDFE1-F89D-4710-A1F4-944C4676058B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.Extensions", "Sitecore80.MVC.Extensions\Sitecore.MVC.Extensions.csproj", "{006F3965-AC60-478D-BED6-E2FF1B1E1923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.Web.UnitTest", "Sitecore.MVC.Web.UnitTest\Sitecore.MVC.Web.UnitTest.csproj", "{81E7864A-E6DA-49C5-82E6-BB2C50A0CCCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SCMVCSKitZip", "SCMVCSKitZip", "{453E28AA-EC60-4EEA-89E3-1556A10D1DAD}"
+	ProjectSection(SolutionItems) = preProject
+		SCMVCSKitZip\MyTemplate.vstemplate = SCMVCSKitZip\MyTemplate.vstemplate
+		SCMVCSKitZip\$safeprojectname$.Extensions\SitecoreExtensions.vstemplate = SCMVCSKitZip\$safeprojectname$.Extensions\SitecoreExtensions.vstemplate
+		SCMVCSKitZip\$safeprojectname$.IOC\SitecoreIOC.vstemplate = SCMVCSKitZip\$safeprojectname$.IOC\SitecoreIOC.vstemplate
+		SCMVCSKitZip\$safeprojectname$.Models\SitecoreModels.vstemplate = SCMVCSKitZip\$safeprojectname$.Models\SitecoreModels.vstemplate
+		SCMVCSKitZip\$safeprojectname$.MVC.Web\SitecoreMVCWeb.vstemplate = SCMVCSKitZip\$safeprojectname$.MVC.Web\SitecoreMVCWeb.vstemplate
+		SCMVCSKitZip\$safeprojectname$.MVC.Web.UnitTest\SitecoreMVCWebUnitTest.vstemplate = SCMVCSKitZip\$safeprojectname$.MVC.Web.UnitTest\SitecoreMVCWebUnitTest.vstemplate
+		SCMVCSKitZip\$safeprojectname$.TDS.Core\SitecoreTDSCore.vstemplate = SCMVCSKitZip\$safeprojectname$.TDS.Core\SitecoreTDSCore.vstemplate
+		SCMVCSKitZip\$safeprojectname$.TDS.Master\SitecoreTDSMaster.vstemplate = SCMVCSKitZip\$safeprojectname$.TDS.Master\SitecoreTDSMaster.vstemplate
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin-References", "Bin-References", "{01CFBE6E-0186-4963-B80F-BF08B50917CC}"
+	ProjectSection(SolutionItems) = preProject
+		..\Bin-References\Sitecore.Analytics.dll = ..\Bin-References\Sitecore.Analytics.dll
+		..\Bin-References\Sitecore.Buckets.dll = ..\Bin-References\Sitecore.Buckets.dll
+		..\Bin-References\Sitecore.Client.dll = ..\Bin-References\Sitecore.Client.dll
+		..\Bin-References\Sitecore.ContentSearch.dll = ..\Bin-References\Sitecore.ContentSearch.dll
+		..\Bin-References\Sitecore.ContentSearch.Linq.dll = ..\Bin-References\Sitecore.ContentSearch.Linq.dll
+		..\Bin-References\Sitecore.Kernel.dll = ..\Bin-References\Sitecore.Kernel.dll
+		..\Bin-References\Sitecore.Logging.dll = ..\Bin-References\Sitecore.Logging.dll
+		..\Bin-References\Sitecore.Mvc.dll = ..\Bin-References\Sitecore.Mvc.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.MVC.Services", "Sitecore.Services\Sitecore.MVC.Services.csproj", "{FF4C7669-E2A2-40A0-9D5F-CEC1569C48C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E32F598-C351-4826-BAA1-1CA48B74983F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E32F598-C351-4826-BAA1-1CA48B74983F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E32F598-C351-4826-BAA1-1CA48B74983F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E32F598-C351-4826-BAA1-1CA48B74983F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C7C50C-AF51-4C05-9E12-C379FD71B482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C7C50C-AF51-4C05-9E12-C379FD71B482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C7C50C-AF51-4C05-9E12-C379FD71B482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C7C50C-AF51-4C05-9E12-C379FD71B482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{861B794B-0535-4655-A697-12AB3E8EC651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{861B794B-0535-4655-A697-12AB3E8EC651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{861B794B-0535-4655-A697-12AB3E8EC651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{861B794B-0535-4655-A697-12AB3E8EC651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A79B50-AA23-44B4-98E3-5BC589978982}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBBDFE1-F89D-4710-A1F4-944C4676058B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{006F3965-AC60-478D-BED6-E2FF1B1E1923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006F3965-AC60-478D-BED6-E2FF1B1E1923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006F3965-AC60-478D-BED6-E2FF1B1E1923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006F3965-AC60-478D-BED6-E2FF1B1E1923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E7864A-E6DA-49C5-82E6-BB2C50A0CCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E7864A-E6DA-49C5-82E6-BB2C50A0CCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E7864A-E6DA-49C5-82E6-BB2C50A0CCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E7864A-E6DA-49C5-82E6-BB2C50A0CCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF4C7669-E2A2-40A0-9D5F-CEC1569C48C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF4C7669-E2A2-40A0-9D5F-CEC1569C48C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF4C7669-E2A2-40A0-9D5F-CEC1569C48C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF4C7669-E2A2-40A0-9D5F-CEC1569C48C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.Web", "Sitecore.Webforms.Web\Sitecore.Webforms.Web.csproj", "{9D73DDE0-C6C1-46DB-81DE-582671B10F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.Models", "Sitecore.Webforms.Models\Sitecore.Webforms.Models.csproj", "{8758E950-3870-43F6-949C-5416C02A314C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.Extensions", "Sitecore.Webforms.Extensions\Sitecore.Webforms.Extensions.csproj", "{AD00A145-76BD-43EF-9D7D-98810865FA84}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Webforms.TDS.Core", "Sitecore.Webforms.TDS.Core\Sitecore.Webforms.TDS.Core.scproj", "{10F89217-F65A-4F30-96F3-A3ACC444186D}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Webforms.TDS.Master", "Sitecore.Webforms.TDS.Master\Sitecore.Webforms.TDS.Master.scproj", "{2A248E5D-7864-4425-A250-3A324C582CF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BinReferences", "BinReferences", "{108A1133-0904-437B-8499-89FAC17927DE}"
+	ProjectSection(SolutionItems) = preProject
+		..\Bin-References\Sitecore.Analytics.dll = ..\Bin-References\Sitecore.Analytics.dll
+		..\Bin-References\Sitecore.Buckets.dll = ..\Bin-References\Sitecore.Buckets.dll
+		..\Bin-References\Sitecore.Client.dll = ..\Bin-References\Sitecore.Client.dll
+		..\Bin-References\Sitecore.ContentSearch.dll = ..\Bin-References\Sitecore.ContentSearch.dll
+		..\Bin-References\Sitecore.ContentSearch.Linq.dll = ..\Bin-References\Sitecore.ContentSearch.Linq.dll
+		..\Bin-References\Sitecore.Kernel.dll = ..\Bin-References\Sitecore.Kernel.dll
+		..\Bin-References\Sitecore.Logging.dll = ..\Bin-References\Sitecore.Logging.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.IOC", "Sitecore.Webforms.IOC\Sitecore.Webforms.IOC.csproj", "{FA4E8B33-46C7-4A1A-8923-0E538B703E4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.Services", "Sitecore.Webforms.Services\Sitecore.Webforms.Services.csproj", "{5A4C9381-77C9-40AD-96DA-A3809D05B197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Webforms.UnitTests", "Sitecore.Webforms.UnitTests\Sitecore.Webforms.UnitTests.csproj", "{5F36733E-31A7-4496-BE6A-C31975A8878E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D73DDE0-C6C1-46DB-81DE-582671B10F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D73DDE0-C6C1-46DB-81DE-582671B10F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D73DDE0-C6C1-46DB-81DE-582671B10F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D73DDE0-C6C1-46DB-81DE-582671B10F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8758E950-3870-43F6-949C-5416C02A314C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8758E950-3870-43F6-949C-5416C02A314C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8758E950-3870-43F6-949C-5416C02A314C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8758E950-3870-43F6-949C-5416C02A314C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD00A145-76BD-43EF-9D7D-98810865FA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD00A145-76BD-43EF-9D7D-98810865FA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD00A145-76BD-43EF-9D7D-98810865FA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD00A145-76BD-43EF-9D7D-98810865FA84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F89217-F65A-4F30-96F3-A3ACC444186D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A248E5D-7864-4425-A250-3A324C582CF9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FA4E8B33-46C7-4A1A-8923-0E538B703E4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4E8B33-46C7-4A1A-8923-0E538B703E4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4E8B33-46C7-4A1A-8923-0E538B703E4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4E8B33-46C7-4A1A-8923-0E538B703E4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4C9381-77C9-40AD-96DA-A3809D05B197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4C9381-77C9-40AD-96DA-A3809D05B197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4C9381-77C9-40AD-96DA-A3809D05B197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4C9381-77C9-40AD-96DA-A3809D05B197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F36733E-31A7-4496-BE6A-C31975A8878E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F36733E-31A7-4496-BE6A-C31975A8878E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F36733E-31A7-4496-BE6A-C31975A8878E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F36733E-31A7-4496-BE6A-C31975A8878E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45
+	EndGlobalSection
+EndGlobal
