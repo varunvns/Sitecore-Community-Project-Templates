@@ -28,6 +28,29 @@ Next, Search for "Sitecore" and install the Sitecore Community Project Templates
 
 ![Sitecore-Community-Project-Templates](https://varunvns.files.wordpress.com/2015/11/search-sitecore-option-3-sitecore-community-project-templates.png)
 
+***
+
+##How to Configure a Project Template from Sitecore Community Project Templates
+
+We will talk about Starter Kits only.
+Just a brief about Starter kit solutions, once we install Sitecore Community Project Templates from the Visual Studio Gallery and restart Visual Studio, in the File Menu, click on New Project. <br/>
+In the New Project Dialog, you will be able to see, that below Visual C#, there is a new node, Sitecore Community and going in there, we see a number of projects that we can add. <br/>
+
+![New-Project-Dialog-Sitecore-Community](https://varunvns.files.wordpress.com/2015/11/new-project-dialog.png)
+
+Next, when we select either MVC Starterkit or WebForms StarterKit, it creates a project solution with a number of projects in there. <br/>
+Now, there are a set of steps that need to be performed, to make sure that the solution is setup well and then we need to build the solution and verify that the changes are perfect. <br/> <br/>
+
+
+The changes are as below: <br/>
+
+1. Add Sitecore References: Now, this depends on whether you have a Local Nuget Server, or you generally add references to Sitecore DLLs in individual projects. If you have a Local Nuget Server to take care of the Sitecore references, and install the Nuget packages for the required versions of Sitecore. Otherwise, add a directory at the location where Solution file recides and add all required DLLs in there. Next, add a solution Folder, name it Bin-References and add all the Sitecore Assemblies to all the projects from there. <br/> 
+2. Add References of all the projects in the Web Project <br/>
+3. Configure the TDS projects, in the General and Build Section of its properties and connect it with your Sitecore Instance. <br/>
+4. Install the Sitecore Connector again, by unchecking/checking the Install connector in TDS projects build properties. <br/>
+5. Build your solution and check that the Build succeeded. <br/>
+
+And now get started!
 
 *** 
 ## Contribute to Sitecore Community Project Templates Module
