@@ -64,7 +64,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Community-Templates-License.txt" />
+    <Content Include="Community-Templates-License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="icon-32-community.ico" />
     <Content Include="preview-128-community.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
